@@ -3,9 +3,9 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-package_name: M3_App_2
+package_name: Ques_Ans_Using_HF_Model
 allow_embedding: false
-name: M3 App 2
+name: Ques_Ans_Using_HF_Model
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 startup_form: Form1
