@@ -10,5 +10,12 @@ class Form1(Form1Template):
     # Any code you write here will run before the form opens.
 
   def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    pass
+    context_text=self.text_area_1.text
+    question_text=self.text_box_1.text
+
+    output=anvil.server.call('ques_ans',question_text,context_text)
+
+    if output:
+      # self.output.visible=True
+      self.rich_text_1.content=output 
+
